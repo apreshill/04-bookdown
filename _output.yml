@@ -1,7 +1,7 @@
 bookdown::bs4_book:
   css: bs4_style.css
   theme:
-    primary: "#880D1E"
+    primary: "#4A1D72"
   repo: https://github.com/apreshill/04-bookdown
 bookdown::pdf_book:
   includes:
