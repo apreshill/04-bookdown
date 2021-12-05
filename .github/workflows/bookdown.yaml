@@ -23,6 +23,12 @@ jobs:
 
       - uses: r-lib/actions/setup-renv@v1
 
+      - name: Install packages missed by renv
+        run: |
+          R -e 'install.packages("bslib")'
+          R -e 'install.packages("xml2")'
+          R -e 'install.packages("downlit")'
+
       - name: Cache bookdown results
         uses: actions/cache@v2
         with:
